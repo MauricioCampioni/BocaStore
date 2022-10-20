@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.ColorLink{
+    transition: all 200ms;
+    color: blue;
+}
+.ColorLink:hover{
+    color: white;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 30px;
+    margin: 5px 0px;
+}
+h2,p{
+    margin: 10px;
+}
+.Parrafo-y-Titulo{
+    width: 100%;
+    margin: 50px;
+    color: rgb(19, 19, 7);
+}
+#MenuNavegacion{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav{
+    background-color: rgb(127, 86, 86);
+    align-items: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.LinkNavegacion{ 
+    margin: 0px 50px;
+}
+#BannerLogo{
+    width: 100%;
+    height: 100px;
+}
+#BannerImagen{
+    width: 100%;
+    height: 100%;
+}
+.TamañoNosotrosEscudo{
+    width: 100%;
+    height: 100%;
+}
+.SizeEscudoBoca{
+    width: 200px;
+    height: 300px;
+}
+main{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(241, 237, 225);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#SectionTexto{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+#DivSection{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Remera,.Short{
+    box-shadow: 3px 2px 5px black;
+    transition: all 500ms;
+    border-style: solid;
+    border-width: 1px;
+    width: 150px;
+    height: 200px;
+}
+.ImagenRemera,.ImagenShort{
+    width: 100%;
+    height: 150px;
+}
+.Remera:hover{
+    transform: scale(1.1);
+}
+.Short:hover{
+    transform: scale(1.1);
+}
+#ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap: 40px;
+}
+#TituloProductos_Destacados, #TituloProductos_Hombre, #TituloProductos_Mujer, #TituloProductos_Niños{
+    margin-top: 30px;
+    text-align: center;
+}
+#ProductosHombre{
+    height: fit-content;
+}
+#Contenedor-Formulario{
+    width: 300px;
+    height: 400px;
+}
+.div.info{
+    display: flex;
+    flex-direction: column;
+}
+form,input,textarea{
+    width: 200px;
+    font-family: monospace;
+    font-weight: 900;
+}
+label{
+    font-size: 20px;
+    color: white;
+    margin: 5px 0px;
+}
+#UbicacionImagenes{
+    width: 100%;
+    background-color: rgb(200, 200, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    height: 40px;
+    background-color: rgb(21, 17, 8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#LogoDeBoca{
+    width: 100%;
+    height: 100%;
+}
+.DivImagen{
+    width: 100%;
+    height: 300px;
+}
+#Formulario{
+    margin-bottom: 20px;
+}
+#Contacto{
+    text-align: center;
+}
+
+@media (min-width:576px){ 
+    #ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media (min-width:768px){
+    #ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños{
+        grid-template-columns: repeat(3,auto);
+
+    }
+    #ProductosDestacados{
+        height: 550px;
+    }
+    #ProductosMujer, #ProductosNiños{
+        height: 625px;
+    }
+    #BannerLogo{
+        height: 150px;
+    }
+}
+@media (min-width:992px){
+    nav{
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #MenuNavegacion{
+        flex-direction: row;
+        justify-content: center;
+    }
+   .LinkNavegacion{
+        margin: 20px;
+    }
+    #BocaStore{
+        margin-left: 30px;
+    }
+    #BannerLogo{
+        height: 200px;
+    }
+    #ProductosMujer, #ProductosNiños{
+        height: 720px;
+    }
+    #ProductosHombre{
+        height: 750px;
+    }
+}
+@media (min-width:1200px){
+    #ProductosMujer, #ProductosNiños{
+        height: 800px;
+    }
+    #ProductosHombre{
+        height: 900px;
+    }
+    .DivImagen{
+        height: 300px;
+    }
+    #SectionTexto{
+        width: 70%;
+        flex-direction: row;
+    }
+}
