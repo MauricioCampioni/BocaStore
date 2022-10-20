@@ -6,6 +6,7 @@
 a{
     text-decoration: none;
 }
+
 .ColorLink{
     transition: all 200ms;
     color: blue;
@@ -34,7 +35,7 @@ h2,p{
     justify-content: center;
 }
 nav{
-    background-color: rgb(127, 86, 86);
+    background-color:orange;
     align-items: center;
     height: 180px;
     display: flex;
@@ -149,7 +150,7 @@ label{
 }
 footer{
     height: 40px;
-    background-color: rgb(21, 17, 8);
+    background-color: orange;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -168,6 +169,10 @@ footer{
 #Contacto{
     text-align: center;
 }
+
+
+    /*EMPIEZA MEDIA QUERIES*/
+
 
 @media (min-width:576px){ 
     #ProductosDestacados, #ProductosHombre, #ProductosMujer, #ProductosNiños{
